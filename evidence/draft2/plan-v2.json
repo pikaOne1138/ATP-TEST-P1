@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "kind": "helper",
+  "layoutSlug": "practice-compass",
+  "visualTheme": "botanical",
+  "brand": {"name": "林若安", "primaryColor": "#50775B", "tagline": "冥想與呼吸的陪伴"},
+  "navigation": [
+    {"id":"services","label":"服務項目","enabled":true},
+    {"id":"first-visit","label":"合作流程","enabled":true},
+    {"id":"about","label":"關於我","enabled":true},
+    {"id":"faq","label":"常見問題","enabled":true},
+    {"id":"booking","label":"聯絡方式","enabled":true}
+  ],
+  "primaryCta": {"label":"聯絡方式","pageId":"booking"},
+  "notes": "草稿二：改成先說適合與否的版型；：只用已知資訊（姓名、冥想與呼吸陪伴、慢慢看不急著預約）。其他資料待確認。"
+}

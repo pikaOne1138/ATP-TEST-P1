@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "kind": "helper",
+  "layoutSlug": "practice-compass",
+  "visualTheme": "botanical",
+  "brand": {
+    "name": "林若安",
+    "primaryColor": "#5E7868",
+    "tagline": "冥想與呼吸的陪伴",
+    "palette": {"primary":"#5E7868","secondary":"#93A89A","accent":"#B98C7A","background":"#F5F2E9","text":"#2F3A34"}
+  },
+  "navigation": [
+    {"id":"services","label":"陪伴方式","enabled":true},
+    {"id":"first-visit","label":"合作流程","enabled":false},
+    {"id":"about","label":"關於我","enabled":true},
+    {"id":"faq","label":"常見問題","enabled":true},
+    {"id":"articles","label":"文章","enabled":false},
+    {"id":"booking","label":"聯絡方式","enabled":true}
+  ],
+  "primaryCta": {"label":"看看陪伴方式","pageId":"services"},
+  "about": {"bio": "我是林若安，做冥想與呼吸的陪伴。"},
+  "notes": "第三版：已確認＝姓名、冥想與呼吸的陪伴、柔軟不催促、慢慢看適不適合、色彩意圖（霧鼠尾草綠／米白／淡陶土）、頁面清單。價格、時長、資格、聯絡方式、照片、見證＝待確認，不得編造。"
+}

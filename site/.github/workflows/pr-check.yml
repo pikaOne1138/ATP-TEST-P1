@@ -1,0 +1,27 @@
+name: Student PR build verification
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - name: Prove learner validators reject known-bad output
+        run: npm run test:regressions
+      - run: npm run check:context
+      - run: npm run check:secrets
+      - run: npm run build
+      - run: npm run check:secrets
+      - name: Verify site output and draft isolation
+        run: npm run verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: student-pr-build
+          path: dist

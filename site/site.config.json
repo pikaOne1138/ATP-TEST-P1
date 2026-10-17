@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "layoutDefinitionVersion": 1,
+  "layoutAdapter": {
+    "id": "practice-compass",
+    "version": 1,
+    "assemblyStatus": "in-progress",
+    "visualReview": "deferred",
+    "supportedPages": [
+      "/",
+      "/services/",
+      "/about/",
+      "/faq/",
+      "/contact/",
+      "/privacy/",
+      "/search/",
+      "/404/"
+    ]
+  },
+  "assemblyStatus": "in-progress",
+  "kind": "helper",
+  "layoutSlug": "practice-compass",
+  "visualTheme": "botanical",
+  "brand": {
+    "name": "林若安",
+    "primaryColor": "#5E7868",
+    "tagline": "冥想與呼吸的陪伴",
+    "palette": {
+      "primary": "#5E7868",
+      "secondary": "#93A89A",
+      "accent": "#B98C7A",
+      "background": "#F5F2E9",
+      "text": "#2F3A34"
+    }
+  },
+  "navigation": [
+    {
+      "id": "services",
+      "label": "陪伴方式",
+      "enabled": true,
+      "path": "services/"
+    },
+    {
+      "id": "about",
+      "label": "關於我",
+      "enabled": true,
+      "path": "about/"
+    },
+    {
+      "id": "faq",
+      "label": "常見問題",
+      "enabled": true,
+      "path": "faq/"
+    },
+    {
+      "id": "page-contact",
+      "label": "聯絡方式",
+      "path": "contact/",
+      "enabled": true
+    }
+  ],
+  "primaryCta": {
+    "label": "看看陪伴方式",
+    "pageId": "services"
+  },
+  "sectionPatterns": [],
+  "content": {
+    "headline": "",
+    "intro": ""
+  },
+  "about": {
+    "bio": "我陪人用呼吸、冥想和書寫，慢慢回到自己的節奏。一對一的。"
+  },
+  "team": [],
+  "events": [],
+  "serviceTiming": [],
+  "site": "https://example.com",
+  "base": "/",
+  "pageContent": {
+    "about": [
+      "我是林若安，做冥想與呼吸的陪伴。"
+    ]
+  },
+  "services": [],
+  "layoutContent": {
+    "copy": {},
+    "headings": {}
+  },
+  "artDirection": {
+    "topics": [],
+    "scope": {
+      "suitable": [],
+      "notSuitable": [
+        "我不做醫療診斷或治療；如果你需要，請先找合格的醫療專業人員。"
+      ]
+    },
+    "serviceFacts": {
+      "scope": "以呼吸、冥想和書寫為主的一對一陪伴。",
+      "credentials": "",
+      "format": "一對一",
+      "duration": "",
+      "price": "",
+      "cancellation": ""
+    },
+    "faq": [],
+    "visitorIntents": [],
+    "contact": {
+      "email": "",
+      "url": "",
+      "bookingUrl": ""
+    },
+    "explicitPageIds": [
+      "about",
+      "services",
+      "articles",
+      "faq",
+      "page-contact",
+      "page-privacy",
+      "page-search"
+    ]
+  }
+}
