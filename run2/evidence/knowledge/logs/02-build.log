@@ -1,0 +1,96 @@
+
+> prebuild
+> node scripts/theme-css.mjs
+
+theme.css 已由 site.config.json 產生
+
+> build
+> node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector "[data-pagefind-body]" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs
+
+23:53:51 [vite] Re-optimizing dependencies because vite config has changed
+23:53:52 [content] Syncing content
+23:53:52 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/articles"
+23:53:52 [content] Synced content
+23:53:52 [types] Generated 457ms
+23:53:52 [build] output: "static"
+23:53:52 [build] mode: "static"
+23:53:52 [build] directory: /home/user/atp-run2/knowledge/dist/
+23:53:52 [build] Collecting build info...
+23:53:52 [build] ✓ Completed in 471ms.
+23:53:52 [build] Building static entrypoints...
+23:53:53 [vite] ✓ built in 933ms
+23:53:53 [build] ✓ Completed in 963ms.
+
+ generating static routes 
+23:53:53 ▶ src/pages/404.astro
+23:53:53   └─ /404.htmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+12ms) 
+23:53:53 ▶ src/pages/[...page].astro
+23:53:53 ▶ src/pages/about/index.astro
+23:53:53   └─ /about/index.htmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+3ms) 
+23:53:53 ▶ src/pages/articles/[slug].astro
+The collection "articles" does not exist or is empty. Please check your content config file for errors.
+23:53:53 ▶ src/pages/articles/index.astro
+23:53:53   └─ /articles/index.htmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+4ms) 
+23:53:53 ▶ src/pages/index.astro
+23:53:53   └─ /index.htmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+3ms) 
+23:53:53 λ src/pages/robots.txt.js
+23:53:53   └─ /robots.txt (+1ms) 
+23:53:53 λ src/pages/rss.xml.js
+23:53:53   └─ /rss.xmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+23:53:53 ▶ src/pages/search.astro
+23:53:53   └─ /search/index.htmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+4ms) 
+23:53:53 λ src/pages/sitemap.xml.js
+23:53:53   └─ /sitemap.xmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+2ms) 
+23:53:53 ▶ src/pages/topics/[slug].astro
+23:53:53 ▶ src/pages/topics/index.astro
+23:53:53   └─ /topics/index.htmlThe collection "articles" does not exist or is empty. Please check your content config file for errors.
+The collection "articles" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+23:53:53 ✓ Completed in 62ms.
+
+23:53:53 [build] 6 page(s) built in 1.51s
+23:53:53 [build] Complete!
+
+Running Pagefind v1.6.0 (Extended)
+Running from: "/home/user/atp-run2/knowledge"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 6 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-hant
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 3 pages
+  Indexed 119 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Pagefind found references to the Default UI (pagefind-ui.js)           │
+│  on your site. The Default UI is supported and will continue            │
+│  to work.                                                               │
+│                                                                         │
+│  As of 1.5.0, if you are setting up a new integration, use the          │
+│  Component UI instead. It includes a search modal, better               │
+│  accessibility and customization: https://pagefind.app/docs/search-ui/  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Finished in 0.272 seconds
+Supplemental Chinese search index: 5 pages. Pagefind is separate.
+Independent internal routes PASS: 6
