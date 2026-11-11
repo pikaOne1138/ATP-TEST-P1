@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "kind": "knowledge",
+  "layoutSlug": "sidebar-journal",
+  "visualTheme": "studio",
+  "brand": {
+    "name": "語庭的讀書筆記",
+    "primaryColor": "#2F5D50",
+    "tagline": "整理工作方法、閱讀、時間與注意力的讀書筆記",
+    "palette": {
+      "primary": "#2F5D50",
+      "secondary": "#708A7A",
+      "accent": "#B17C60",
+      "background": "#F6F7F3",
+      "text": "#23312D"
+    },
+    "typography": "balanced",
+    "imageStyle": "natural"
+  },
+  "navigation": [
+    {"id": "articles", "label": "文章", "enabled": true},
+    {"id": "topics", "label": "主題", "enabled": true},
+    {"id": "about", "label": "關於我", "enabled": true},
+    {"id": "page-search", "label": "搜尋", "enabled": true, "path": "search/"},
+    {"id": "start-here", "label": "開始閱讀", "enabled": false},
+    {"id": "resources", "label": "資源", "enabled": false}
+  ],
+  "sectionPatterns": [],
+  "primaryCta": {"label": "閱讀文章", "pageId": "articles"},
+  "content": {"headline": "", "intro": "整理工作方法、閱讀、時間與注意力的讀書筆記"},
+  "about": {"bio": "", "purpose": "", "approach": "", "background": ""},
+  "layoutContent": {"headings": {"h2-01": "最近的文章"}},
+  "assets": [],
+  "notes": "路線 C 訪談後由 AI 依理解確認單第 2 版映射。學員已確認：版型側欄日誌、不要口號式大標題、不要裝飾用英文小字、要關鍵字搜尋、字不要太小、暫不分主題、不放社群帳號。AI 建議待學員看預覽確認：studio 墨綠配色、balanced 字體、首頁一句話介紹。缺：Email 地址、照片／Logo。自我介紹與兩篇短文學員已有、待貼。"
+}

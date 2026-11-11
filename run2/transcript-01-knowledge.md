@@ -188,3 +188,38 @@ C 比較像我想要的，一篇一篇往下讀，比較安靜。A 的顏色我�
 對，可以開始。
 
 > 總監註記：明確同意，訪談階段結束（T1–T16，共 8 輪問答）。
+
+## 階段 2｜建立獨立網站
+
+**T17｜建站 AI**
+
+收到，那我開始做了。做的過程你不用操作任何東西，有進度我會告訴你。
+
+先跟你要第一樣東西：
+請把你寫好的那段自我介紹貼給我。
+（原樣貼上就好，不用先修；我只會照你寫的放，不會幫你加經歷或頭銜。）
+
+> 總監註記：確認紀錄 commit `2b33962`。建站 AI 寫出 Site Brief（`knowledge`／`sidebar-journal`／`studio` 配色），並回報靜態閱讀匯出器的新發現：
+> - **「主題」頁關不掉**：知識型擴充版型把文章、主題、關於、搜尋列為必要頁，在 Site Brief 關閉會報錯（`Essential route must stay enabled`），但規劃器畫面允許取消勾選——兩者不一致，且與它對學員的建議「主題頁先不開」衝突。
+> - 搜尋頁其實是內建的（會強制加入 `search/`）。
+> - `--require-assembled` 對這個版型實際不會被檢查到。
+> - 資料包沒有說明既有空 repo 如何併入匯出結果。
+
+**總監執行紀錄（腳本已先審查；使用者授權由主對話執行）**
+
+| 步驟 | 結果 |
+|---|---|
+| `check-start-record.mjs` | exit 0：`G-00 開工紀錄 PASS：路線 C，已確認`（腳本自註「只證明有留痕，不證明真人同意」） |
+| `export-starter.mjs … --require-assembled --require-start-record …` | exit 0：`Independent Art Direction adapter exported: sidebar-journal … Assembly in Progress; screenshots deferred` |
+| 併入工作資料夾 `cp -an` | 完成 |
+| `npm install --no-audit --no-fund` | exit 0，281 packages |
+| `npm run preflight` | exit 0；workflowPush／deployConnected 為 unknown |
+| `npm run build` | exit 0；6 頁；Pagefind zh-hant 索引 4 頁；補充中文索引 5 頁；內部連結 PASS 6 |
+| `npm run verify` | exit 0；G-01 正式網址 WARN、G-08 WARN，其餘 G-02／03／04／05／09／11 PASS |
+| `npm run qa:responsive` | **exit 1**：專案安裝的 Playwright 與本機預裝 Chromium 版本不合，腳本要求 `npx playwright install`。依規則未安裝；改由建站 AI 用自己的截圖腳本做四寬度目視 |
+
+**T18｜學員（SIMULATED）**
+
+好，這段：
+
+我是語庭，在科技公司做專案管理。六年前開始，每讀完一本書就寫一則筆記，慢慢累積到現在。這裡放的是我整理過的想法，多半跟工作方法、閱讀、時間與注意力有關。寫給自己，也寫給同樣在上班、喜歡看書的你。
