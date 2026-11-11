@@ -6,4 +6,4 @@ export function getStaticPaths(){return config.navigation.filter(x=>!config.artD
 const {item}=Astro.props;
 const paragraphs=config.pageContent[item.id]||[];
 ---
-<SiteLayout title={item.label}><Page route="extra" extra={true}><section class="interior"><p class="eyebrow">{item.id.toUpperCase()}</p><h1>{item.label}</h1>{paragraphs.length?paragraphs.map(p=><p>{p}</p>):<p class="notice">此頁內容尚在整理中。</p>}</section></Page></SiteLayout>
+<SiteLayout title={item.label}><Page route="extra" extra={true}><section class="interior"><h1>{item.label}</h1>{paragraphs.length?paragraphs.map(p=><p>{p}</p>):<p class="notice">此頁內容尚在整理中。</p>}</section></Page></SiteLayout>

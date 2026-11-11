@@ -42,3 +42,5 @@ T16（學員）：「對，可以開始。」
 - 匯出器限制（T16 後靜態閱讀 export-art-direction-starter.mjs 發現）：knowledge 的擴充版型把 articles／topics／about／page-search(search/) 列為 essential，強制啟用，「主題」頁不能在 Site Brief 關閉（會丟 Essential route must stay enabled）。與確認單第 5 欄「主題頁先不開」衝突 → 匯出後再評估從選單隱藏（astro-page-management），並如實告訴學員。
 - 文章 frontmatter 在此版型有 `topics` 欄位，值必須存在於 site.config.json 的 artDirection.topics，否則 build 會失敗。
 - Site Brief：/home/user/atp-run2/knowledge-brief/site-brief.json（匯出後複製一份進 repo）。
+
+> 2026-11-11：本檔內容已併入 PROJECT.md（第 1–5、7 節與「需求理解確認紀錄」）。之後以 PROJECT.md 為準，本檔保留作訪談原始紀錄。
