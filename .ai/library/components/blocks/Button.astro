@@ -1,0 +1,7 @@
+---
+interface Props { href?: string; variant?: 'primary'|'outline'; }
+import {safeHref} from './safe-href';
+const { href, variant='primary' }=Astro.props;
+const link=safeHref(href);
+---
+{link ? <a class={`ab-button ${variant}`} href={link}><slot /></a> : <span class={`ab-button ${variant}`}><slot /></span>}

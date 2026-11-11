@@ -1,0 +1,6 @@
+---
+import Page from '../components/layouts/expanded/Page.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+const base=import.meta.env.BASE_URL;
+---
+<SiteLayout title="找不到這個頁面" searchable={false}><Page route="extra" extra={true}><section class="interior"><h1>找不到這個頁面</h1><a href={base}>返回首頁 →</a></section></Page></SiteLayout>

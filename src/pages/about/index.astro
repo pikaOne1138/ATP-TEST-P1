@@ -1,0 +1,7 @@
+---
+import config from '../../../site.config.json';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import Page from '../../components/layouts/expanded/Page.astro';
+const route="about";
+---
+<SiteLayout title={route==='about'?'關於':config.brand.name}><Page route={route}/></SiteLayout>

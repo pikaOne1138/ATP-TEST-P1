@@ -1,0 +1,39 @@
+{
+  "name": "student-astro-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector \"[data-pagefind-body]\" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs",
+    "preview": "astro preview",
+    "verify:output": "node scripts/verify-site-output.mjs --student-site .",
+    "verify": "node scripts/gates.mjs --mode preview",
+    "gate:preview": "node scripts/gates.mjs --mode preview",
+    "gate:release": "node scripts/gates.mjs --mode release",
+    "preflight": "node scripts/preflight.mjs",
+    "verify:release": "node scripts/verify-release-readiness.mjs .",
+    "test:release": "node scripts/test-release-readiness.mjs",
+    "test:regressions": "node scripts/test-generated-link-audit.mjs && node scripts/test-site-output-regressions.mjs && node scripts/test-release-readiness.mjs",
+    "sync:theme": "node scripts/theme-css.mjs",
+    "predev": "node scripts/theme-css.mjs",
+    "prebuild": "node scripts/theme-css.mjs",
+    "qa:responsive": "node scripts/qa-student-responsive.mjs",
+    "status": "node scripts/site-status.mjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "check:context": "node scripts/check-project-context.mjs",
+    "design:session": "node scripts/design-session.mjs",
+    "design:compare": "node scripts/design-compare.mjs",
+    "design:candidate": "node scripts/design-worktrees.mjs",
+    "design:adopt": "node scripts/design-adopt.mjs",
+    "design:project": "node scripts/design-project-sync.mjs",
+    "design:qa": "node scripts/design-qa.mjs",
+    "design:scope": "node scripts/design-scope.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.14.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.0",
+    "playwright": "^1.56.0"
+  }
+}

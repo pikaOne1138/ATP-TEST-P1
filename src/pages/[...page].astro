@@ -1,0 +1,9 @@
+---
+import Page from '../components/layouts/expanded/Page.astro';
+import config from '../../site.config.json';
+import SiteLayout from '../layouts/SiteLayout.astro';
+export function getStaticPaths(){return config.navigation.filter(x=>!config.artDirection.explicitPageIds.includes(x.id)).map(item=>({params:{page:item.path.slice(0,-1)},props:{item}}));}
+const {item}=Astro.props;
+const paragraphs=config.pageContent[item.id]||[];
+---
+<SiteLayout title={item.label}><Page route="extra" extra={true}><section class="interior"><p class="eyebrow">{item.id.toUpperCase()}</p><h1>{item.label}</h1>{paragraphs.length?paragraphs.map(p=><p>{p}</p>):<p class="notice">此頁內容尚在整理中。</p>}</section></Page></SiteLayout>

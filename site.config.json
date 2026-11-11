@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "layoutDefinitionVersion": 1,
+  "layoutAdapter": {
+    "id": "sidebar-journal",
+    "version": 1,
+    "assemblyStatus": "in-progress",
+    "visualReview": "pending",
+    "supportedPages": [
+      "/",
+      "/articles/",
+      "/articles/[slug]/",
+      "/about/"
+    ]
+  },
+  "assemblyStatus": "in-progress",
+  "kind": "knowledge",
+  "layoutSlug": "sidebar-journal",
+  "visualTheme": "studio",
+  "brand": {
+    "name": "語庭的讀書筆記",
+    "primaryColor": "#2F5D50",
+    "tagline": "整理工作方法、閱讀、時間與注意力的讀書筆記",
+    "palette": {
+      "primary": "#2F5D50",
+      "secondary": "#708A7A",
+      "accent": "#B17C60",
+      "background": "#F6F7F3",
+      "text": "#23312D"
+    },
+    "typography": "balanced",
+    "imageStyle": "natural"
+  },
+  "navigation": [
+    {
+      "id": "articles",
+      "label": "文章",
+      "enabled": true,
+      "path": "articles/"
+    },
+    {
+      "id": "topics",
+      "label": "主題",
+      "enabled": true,
+      "path": "topics/"
+    },
+    {
+      "id": "about",
+      "label": "關於我",
+      "enabled": true,
+      "path": "about/"
+    },
+    {
+      "id": "page-search",
+      "label": "搜尋",
+      "enabled": true,
+      "path": "search/"
+    }
+  ],
+  "primaryCta": {
+    "label": "閱讀文章",
+    "pageId": "articles"
+  },
+  "sectionPatterns": [],
+  "content": {
+    "headline": "",
+    "intro": "整理工作方法、閱讀、時間與注意力的讀書筆記"
+  },
+  "about": {
+    "bio": "",
+    "purpose": "",
+    "approach": "",
+    "background": ""
+  },
+  "team": [],
+  "events": [],
+  "serviceTiming": [],
+  "site": "https://example.com",
+  "base": "/",
+  "pageContent": {
+    "about": []
+  },
+  "services": [],
+  "layoutContent": {
+    "copy": {},
+    "headings": {
+      "h2-01": "最近的文章"
+    }
+  },
+  "artDirection": {
+    "topics": [],
+    "scope": {
+      "suitable": [],
+      "notSuitable": []
+    },
+    "serviceFacts": {
+      "scope": "",
+      "credentials": "",
+      "format": "",
+      "duration": "",
+      "price": "",
+      "cancellation": ""
+    },
+    "faq": [],
+    "visitorIntents": [],
+    "contact": {
+      "email": "",
+      "url": "",
+      "bookingUrl": ""
+    },
+    "explicitPageIds": [
+      "about",
+      "articles",
+      "topics",
+      "page-search"
+    ]
+  },
+  "nativeLayout": true
+}

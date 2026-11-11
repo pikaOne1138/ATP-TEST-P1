@@ -1,0 +1,53 @@
+name: Publish approved student Astro site
+on:
+  workflow_dispatch:
+    inputs:
+      approved_sha:
+        description: Exact reviewed main commit SHA (40 hex)
+        required: true
+        type: string
+      approved_url:
+        description: Exact reviewed production URL including base path
+        required: true
+        type: string
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      SITE_INDEXABLE: ${{ vars.SITE_INDEXABLE || 'false' }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install
+      - id: pages
+        uses: actions/configure-pages@v5
+      - run: npm run build
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          ASTRO_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+      - name: Release technical gate (not a substitute for human approval)
+        run: npm run verify:release
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          ASTRO_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          RELEASE_SHA: ${{ github.sha }}
+          RELEASE_APPROVED_SHA: ${{ inputs.approved_sha }}
+          RELEASE_APPROVED_URL: ${{ inputs.approved_url }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4
