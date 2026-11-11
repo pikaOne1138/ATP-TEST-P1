@@ -94,3 +94,7 @@ C 比較像我想要的，一篇一篇往下讀，比較安靜。A 的顏色我�
 
 > 總監註記：訪談紀錄 commit `f081f7c`。版型選定 `sidebar-journal`（側欄日誌）。
 > **資料包缺口（建站 AI 查證後回報）**：英文裝飾小標（`LATEST NOTES / HOME`、`ON THE DESK`、`PERSONAL PUBLICATION` 等）寫死在 `src/data/layout-assembly/expanded/sidebar-journal/Page.astro`；Site Brief 的 `layoutContent.headings` 只能改四個中文段落標題，改不到這些英文字。規劃器與匯出器都無法滿足「不要英文小字」，必須匯出後手工逐處移除。
+
+**T10｜學員（SIMULATED）**
+
+可以放一個 email，可是我還沒決定要用哪一個。社群帳號先不要放。
