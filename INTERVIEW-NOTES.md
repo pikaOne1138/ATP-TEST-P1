@@ -18,10 +18,15 @@
 
 T14 補充（學員提供）：「大致上對。不過有一件事單子上沒有：我希望可以用關鍵字找到以前的文章，這個做得到嗎？還有字不要太小。自我介紹我其實有寫好一段，兩篇文章也有，你要的話我再貼。」→ 新增需求：關鍵字搜尋文章；字不要太小。自我介紹與兩篇短文：已有、待貼。「大致上對」加上新增需求，不視為對確認單的明確同意，修正後重送。
 
-需求理解確認紀錄：確認單第 2 版已於 T15 送出，**尚未取得學員同意**（硬停點：未同意前不匯出、不寫程式）。
+T16（學員）：「對，可以開始。」
 
-## 理解確認單（第 2 版，T15 送出，待確認）
+## 需求理解確認紀錄
 
+- 入口路線：C
+- 狀態：已確認
+- 確認依據：學員在 T16 針對理解確認單第 2 版回覆「對，可以開始。」
+- 確認時間：2026-11-11 17:00 UTC（AI 工作環境時鐘；學員端時間待補）
+- 確認單全文：
 > 1. 一句話定位：「語庭的讀書筆記」——把六年來的讀書筆記整理成文章，分享給同樣在上班、也喜歡看書的人；主題是工作方法、閱讀、時間與注意力。
 > 2. 訪客的主要行動：讀文章（讀完一篇，能順手找到其他相關的文章）。
 > 3. 頁面清單：首頁（最新文章由上往下排，旁邊一欄放簡介與選單）／文章（所有文章的清單）／搜尋（輸入關鍵字找以前的文章）／關於我（介紹你和這個網站）。
@@ -34,3 +39,6 @@ T14 補充（學員提供）：「大致上對。不過有一件事單子上沒�
 - 「主題」頁（topics）預設啟用：依第 6 題②，建議先關閉，文章多了再開（AI_PROPOSED，放進確認單）。
 - 搜尋（T14 新增）：靜態閱讀結果——匯出站的 build 會產生 Pagefind 與 exact-zh 索引；`export-starter.mjs` 的頁面清單沒有 search 頁；`native-layout-adapters.mjs` 第 32 行只在 `src/pages/search.astro`／`search/index.astro` 已存在時替它套上版型外框；`src/data/art-direction-adapters/shared/pages/search.astro` 存在但是否用於 sidebar-journal 未知。匯出後先看實際檔案：有 search 頁就實測，沒有就依 AGENTS「強制盤點」從 `.ai/library/` 取 SiteSearchDialog／ArticleSearch 組裝。中文關鍵字須在真瀏覽器實測（content-publishing Workflow C）。
 - 字級（T14 新增）：sidebar-journal/Page.astro 內文多為 16–18px，另有 13px、14px 小字（多半就是英文小標）。屬版型層調整，匯出後在學員站改，四寬度檢查。
+- 匯出器限制（T16 後靜態閱讀 export-art-direction-starter.mjs 發現）：knowledge 的擴充版型把 articles／topics／about／page-search(search/) 列為 essential，強制啟用，「主題」頁不能在 Site Brief 關閉（會丟 Essential route must stay enabled）。與確認單第 5 欄「主題頁先不開」衝突 → 匯出後再評估從選單隱藏（astro-page-management），並如實告訴學員。
+- 文章 frontmatter 在此版型有 `topics` 欄位，值必須存在於 site.config.json 的 artDirection.topics，否則 build 會失敗。
+- Site Brief：/home/user/atp-run2/knowledge-brief/site-brief.json（匯出後複製一份進 repo）。
