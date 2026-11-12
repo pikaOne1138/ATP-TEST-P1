@@ -19,14 +19,14 @@
   "visualTheme": "studio",
   "brand": {
     "name": "語庭的讀書筆記",
-    "primaryColor": "#2F5D50",
+    "primaryColor": "#355747",
     "tagline": "整理工作方法、閱讀、時間與注意力的讀書筆記",
     "palette": {
-      "primary": "#2F5D50",
-      "secondary": "#708A7A",
-      "accent": "#B17C60",
-      "background": "#F6F7F3",
-      "text": "#23312D"
+      "primary": "#355747",
+      "secondary": "#637C6E",
+      "accent": "#A56F52",
+      "background": "#F4F1E8",
+      "text": "#242A24"
     },
     "typography": "balanced",
     "imageStyle": "natural"

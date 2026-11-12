@@ -1,0 +1,12 @@
+const {chromium}=require('playwright');
+const out=process.argv[2], base=process.argv[3]||'http://127.0.0.1:4321';
+const pages=(process.argv[4]||'/,/articles/,/about/,/search/,/topics/,/nope/').split(',');
+(async()=>{const b=await chromium.launch();
+for(const path of pages)for(const w of [1440,1280,768,390]){
+ const p=await b.newPage({viewport:{width:w,height:900}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
+ const r=await p.goto(base+path,{waitUntil:'networkidle',timeout:60000}).catch(e=>({status:()=>'ERR '+e.message}));
+ const m=await p.evaluate(()=>({sw:document.documentElement.scrollWidth,cw:document.documentElement.clientWidth,small:[...document.querySelectorAll('main *')].filter(e=>e.children.length===0&&e.textContent.trim()&&parseFloat(getComputedStyle(e).fontSize)<15&&e.offsetParent).map(e=>e.tagName+':'+getComputedStyle(e).fontSize+':'+e.textContent.trim().slice(0,20)).slice(0,6),latin:(document.querySelector('main').innerText.match(/[A-Z][A-Z \/]{3,}/g)||[]).slice(0,6)}));
+ const name=(path==='/'?'home':path.replace(/\//g,''))+'-'+w+'.png';
+ await p.screenshot({path:out+'/'+name,fullPage:true});
+ console.log(path,w,r.status(),'overflow',m.sw>m.cw,'small',JSON.stringify(m.small),'latin',JSON.stringify(m.latin),errs.join('|'));await p.close();}
+await b.close()})();
