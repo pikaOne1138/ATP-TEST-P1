@@ -1,0 +1,86 @@
+
+> prebuild
+> node scripts/theme-css.mjs
+
+theme.css 已由 site.config.json 產生
+
+> build
+> node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector "[data-pagefind-body]" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs
+
+23:56:39 [content] Syncing content
+23:56:39 [content] Synced content
+23:56:39 [types] Generated 382ms
+23:56:39 [build] output: "static"
+23:56:39 [build] mode: "static"
+23:56:39 [build] directory: /home/user/atp-run2/knowledge/dist/
+23:56:39 [build] Collecting build info...
+23:56:39 [build] ✓ Completed in 395ms.
+23:56:39 [build] Building static entrypoints...
+23:56:40 [vite] ✓ built in 991ms
+23:56:40 [build] ✓ Completed in 1.02s.
+
+ generating static routes 
+23:56:40 ▶ src/pages/404.astro
+23:56:40   └─ /404.html (+9ms) 
+23:56:40 ▶ src/pages/[...page].astro
+23:56:40 ▶ src/pages/about/index.astro
+23:56:40   └─ /about/index.html (+3ms) 
+23:56:40 ▶ src/pages/articles/[slug].astro
+23:56:40   ├─ /articles/three-things-before-a-meeting/index.html (+3ms) 
+23:56:40   └─ /articles/why-i-write-reading-notes/index.html (+2ms) 
+23:56:40 ▶ src/pages/articles/index.astro
+23:56:40   └─ /articles/index.html (+2ms) 
+23:56:40 ▶ src/pages/index.astro
+23:56:40   └─ /index.html (+2ms) 
+23:56:40 λ src/pages/robots.txt.js
+23:56:40   └─ /robots.txt (+1ms) 
+23:56:40 λ src/pages/rss.xml.js
+23:56:40   └─ /rss.xml (+2ms) 
+23:56:40 ▶ src/pages/search.astro
+23:56:40   └─ /search/index.html (+2ms) 
+23:56:40 λ src/pages/sitemap.xml.js
+23:56:40   └─ /sitemap.xml (+1ms) 
+23:56:40 ▶ src/pages/topics/[slug].astro
+23:56:40 ▶ src/pages/topics/index.astro
+23:56:40   └─ /topics/index.html (+2ms) 
+23:56:40 ✓ Completed in 44ms.
+
+23:56:40 [build] 8 page(s) built in 1.46s
+23:56:40 [build] Complete!
+
+Running Pagefind v1.6.0 (Extended)
+Running from: "/home/user/atp-run2/knowledge"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 8 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-hant
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 5 pages
+  Indexed 607 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Pagefind found references to the Default UI (pagefind-ui.js)           │
+│  on your site. The Default UI is supported and will continue            │
+│  to work.                                                               │
+│                                                                         │
+│  As of 1.5.0, if you are setting up a new integration, use the          │
+│  Component UI instead. It includes a search modal, better               │
+│  accessibility and customization: https://pagefind.app/docs/search-ui/  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Finished in 0.012 seconds
+Supplemental Chinese search index: 7 pages. Pagefind is separate.
+Independent internal routes PASS: 8
