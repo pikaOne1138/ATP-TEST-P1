@@ -1,2 +1,2 @@
 /* 由 site.config.json 的 brand 產生（node scripts/theme-css.mjs）。請改 site.config.json，不要手改本檔。 */
-:root{--brand-primary:#2F5D50;--brand-secondary:#708A7A;--brand-accent:#B17C60;--brand-background:#F6F7F3;--brand-text:#23312D;--brand-on-primary:#ffffff;--brand-heading-font:"Noto Serif TC",Georgia,serif;--brand-body-font:"Noto Sans TC",system-ui,sans-serif;--brand-image-filter:none;}
+:root{--brand-primary:#355747;--brand-secondary:#637C6E;--brand-accent:#A56F52;--brand-background:#F4F1E8;--brand-text:#242A24;--brand-on-primary:#ffffff;--brand-heading-font:"Noto Serif TC",Georgia,serif;--brand-body-font:"Noto Sans TC",system-ui,sans-serif;--brand-image-filter:none;}
