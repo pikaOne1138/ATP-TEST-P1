@@ -516,3 +516,11 @@ C 比較像我想要的，一篇一篇往下讀，比較安靜。A 的顏色我�
 > - 沒放進給學員訊息的發現：多個連結的觸控高度不足 44px；768 寬側欄文字被擠；`PROJECT.md` 寫文章內文 19px 但實測 18px。
 > - **Skill 指引的問題（它回報）**：`design-improvement.md` 說健檢不應強制跑 QA，`visual-qa.md` 卻要求四寬度截圖加量測腳本，兩者沒銜接；`design-qa.mjs capture` 內部會呼叫本環境跑不起來的 `qa:responsive`；`AGENTS.md` 把元件層寫成 `selected/`，本站實際用 `expanded/`；`astro-design-consultation` 引用的兩個資料檔在學員站不存在；所有流程都假設有 PR 與平台預覽。
 > - **總監執行 Skill 內附量測腳本** `.ai/astro-editorial-layout-design/scripts/audit.mjs`（可用 `CHROME_PATH` 指定瀏覽器，能跑）：exit 1。無水平溢出、最小字 15px；但判定首頁、文章列表、文章頁的日期／標籤文字**對比不足 FAIL**，每頁觸控高度不足 2 處。**這與建站 AI 自寫腳本回報的「文字對比都在 4.5:1 以上」不一致**，待釐清。報告存 `run2/evidence/knowledge/audit/skill-audit-report.json`。
+
+**T34｜學員（SIMULATED，已看第 3、4、5 項的圖）**
+
+有點長，我看了兩次。「宋體」是不是就是書裡面印的那種字？如果是的話我想要，日期改中文也好，那就先改這兩個。
+
+不過搜尋那張我看了有點傻眼，我只寫了一篇有繩子的，怎麼跑出五個，還有一堆看不懂的字擠在一起。這個我比較在意，可以也修嗎？
+
+> 總監註記：學員同意第 1、3 項，並把建站 AI 排在「不是好不好看」的第 5 項（搜尋結果雜訊）提到優先。她也反映訊息偏長、「宋體」需要解釋。
