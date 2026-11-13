@@ -712,3 +712,30 @@ C 的文章列表我覺得太花了，每一篇都貼膠帶、還有圈圈跟框
 改好了：便條下面跟那條直線之間空出一點距離，不會壓到線了。其他都沒動，還沒公開。（附手機與電腦首頁圖）
 
 這樣可以嗎？
+
+### 4-5 品牌視覺改造、4-6 互動與動態精修
+
+**T49｜學員（SIMULATED，已看兩張圖）**
+
+可以，現在有空開了，看起來舒服多了。
+
+另外我又想到兩件事。第一個，我沒有 Logo，可是我想要站名旁邊有一個小小的、屬於我自己的記號，讓人一看就知道是我的網站。還有瀏覽器上面分頁那個小小的圖示，也可以有嗎？
+
+第二個，我想要網站有一點點會動的感覺，比方滑過文章、或是剛進首頁的時候。可是我怕太花，看了會頭暈，這個你幫我拿捏。
+
+> 總監註記（總監代行）：**4-4 局部區塊微調：PASS**（選案、官方工具採用整檔、手動合成混搭、`local-ui` 範圍登記與審查皆完成並獲學員確認）。
+> 讀了 `astro-ui-craft`「既有網站局部精修與品牌一致性改造」與 `astro-motion-craft`（`subtle` 預設：單次 reveal 6–14px、450–750ms；hover 1–3px；必須支援 `prefers-reduced-motion`、無 JavaScript 時內容可見）。
+> **品牌（mode `brand`）**：`design-scope start` exit 0 → 新增 `public/brand-mark.svg`（書籤記號，AI 提案）、站名前放記號、`SiteLayout.astro` 加分頁圖示 → build／verify exit 0（G-11 PASS）→ commit → `design-scope review` `SCOPE_PASS`。
+> 觀察：官方的 Logo 機制（`OwnerImage role="logo"`、`brand.logoPath`）會用圖片**取代**站名文字，沒有「文字旁加記號」的設定；匯出的網站原本也**沒有任何分頁圖示**。
+> **動態（mode `motion`）**：`design-scope start` exit 0 → 只用 CSS：進場淡入上移 10px 一次（0.55s）、標題 hover／鍵盤聚焦右移 3px → build／verify exit 0 → commit `a229dcd` → review `SCOPE_PASS`。
+> 動效實測（Playwright）：進場中途 opacity 0.18／位移 8px，結束 opacity 1／無位移；hover 位移 3.0px；鍵盤 Tab 可到文章連結；**`prefers-reduced-motion: reduce` 時動畫為 none、內容立即可見**；**關閉 JavaScript 時內容可見**。
+> **資料包缺口**：`astro-motion-craft` 要求以 `src/data/effects.registry.json` 與 `src/components/effects/` 為準，但學員站沒有 `src/data/` 也沒有 effects 元件；Skill 指向的效果庫在匯出的網站裡不存在，只能自行以 CSS 實作。
+
+**T50｜建站 AI（總監代行）**
+
+兩件都做了，還沒公開：
+
+1. 記號：你沒有 Logo，所以我先提一個——站名前面一個小小的墨綠書籤。瀏覽器分頁上的小圖示也用同一個書籤。這是我的提案，不是你給的，不喜歡可以換或拿掉。
+2. 會動的感覺：我做得很輕。剛進首頁時，便條和文章由上到下淡淡地浮出來一次（不到一秒，之後就不動）；滑鼠移到文章標題上，標題往右移一點點。手機或電腦如果設了「減少動態」，就完全不會動，內容直接出現。圖沒辦法動，附的是「浮出來到一半」和「浮完」的樣子。
+
+記號這樣可以嗎？

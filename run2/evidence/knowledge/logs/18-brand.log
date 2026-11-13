@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "brand-mark",
+  "mode": "brand",
+  "scope": "站名旁加一個小書籤記號，並作為瀏覽器分頁圖示（學員 T49；她沒有 Logo，記號為 AI 提案待她確認）",
+  "paths": [
+    "public/brand-mark.svg",
+    "src/components/layouts/expanded/Page.astro",
+    "src/layouts/SiteLayout.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/",
+    "/about/",
+    "/search/"
+  ],
+  "preserved": "站名文字、配色、字體、版型、手帳樣式、文章內容",
+  "sourceCommit": "771578a4bc4e8876b5c4539cab9c39ffb2dc2898",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false
+}
+
+> prebuild
+> node scripts/theme-css.mjs
+
+theme.css 已由 site.config.json 產生
+
+> build
+> node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector "[data-pagefind-body]" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs
+
+16:14:19 [content] Syncing content
+16:14:19 [content] Synced content
+16:14:19 [types] Generated 490ms
+16:14:19 [build] output: "static"
+16:14:19 [build] mode: "static"
+16:14:19 [build] directory: /home/user/atp-run2/knowledge/dist/
+16:14:19 [build] Collecting build info...
+16:14:19 [build] ✓ Completed in 507ms.
+16:14:19 [build] Building static entrypoints...
+16:14:20 [vite] ✓ built in 1.09s
+16:14:20 [build] ✓ Completed in 1.13s.
+
+ generating static routes 
+16:14:20 ▶ src/pages/404.astro
+16:14:20   └─ /404.html (+11ms) 
+16:14:20 ▶ src/pages/[...page].astro
+16:14:20 ▶ src/pages/about/index.astro
+16:14:20   └─ /about/index.html (+3ms) 
+16:14:20 ▶ src/pages/articles/[slug].astro
+16:14:20   ├─ /articles/phone-in-another-room/index.html (+4ms) 
+16:14:20   ├─ /articles/why-i-write-reading-notes/index.html (+2ms) 
+16:14:20   └─ /articles/three-things-before-a-meeting/index.html (+2ms) 
+16:14:20 ▶ src/pages/articles/index.astro
+16:14:20   └─ /articles/index.html (+2ms) 
+16:14:20 ▶ src/pages/index.astro
+16:14:20   └─ /index.html (+2ms) 
+16:14:20 λ src/pages/robots.txt.js
+16:14:20   └─ /robots.txt (+2ms) 
+16:14:20 λ src/pages/rss.xml.js
+16:14:20   └─ /rss.xml (+2ms) 
+16:14:20 ▶ src/pages/search.astro
+16:14:20   └─ /search/index.html (+2ms) 
+16:14:20 λ src/pages/sitemap.xml.js
+16:14:20   └─ /sitemap.xml (+1ms) 
+16:14:20 ▶ src/pages/topics/[slug].astro
+16:14:20 ▶ src/pages/topics/index.astro
+16:14:20   └─ /topics/index.html (+2ms) 
+16:14:20 ✓ Completed in 56ms.
+
+16:14:20 [build] 9 page(s) built in 1.70s
+16:14:20 [build] Complete!
+
+Running Pagefind v1.6.0 (Extended)
+Running from: "/home/user/atp-run2/knowledge"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 9 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-hant
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 3 pages
+  Indexed 672 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Pagefind found references to the Default UI (pagefind-ui.js)           │
+│  on your site. The Default UI is supported and will continue            │
+│  to work.                                                               │
+│                                                                         │
+│  As of 1.5.0, if you are setting up a new integration, use the          │
+│  Component UI instead. It includes a search modal, better               │
+│  accessibility and customization: https://pagefind.app/docs/search-ui/  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Finished in 0.014 seconds
+Supplemental Chinese search index: 8 pages. Pagefind is separate.
+Independent internal routes PASS: 9
+{
+  "schemaVersion": 1,
+  "id": "brand-mark",
+  "mode": "brand",
+  "scope": "站名旁加一個小書籤記號，並作為瀏覽器分頁圖示（學員 T49；她沒有 Logo，記號為 AI 提案待她確認）",
+  "paths": [
+    "public/brand-mark.svg",
+    "src/components/layouts/expanded/Page.astro",
+    "src/layouts/SiteLayout.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/",
+    "/about/",
+    "/search/"
+  ],
+  "preserved": "站名文字、配色、字體、版型、手帳樣式、文章內容",
+  "sourceCommit": "771578a4bc4e8876b5c4539cab9c39ffb2dc2898",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false,
+  "currentCommit": "53cddc8438143160d2c56cc7ca882faabac79ba8",
+  "changed": [
+    "public/brand-mark.svg",
+    "src/components/layouts/expanded/Page.astro",
+    "src/layouts/SiteLayout.astro"
+  ],
+  "unexpected": [],
+  "status": "SCOPE_PASS",
+  "note": "This checks Git file scope only, not rendered appearance or release approval."
+}

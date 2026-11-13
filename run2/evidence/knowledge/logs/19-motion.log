@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "gentle-motion",
+  "mode": "motion",
+  "scope": "輕微動效（subtle）：進首頁時便條與文章依序淡入上移一次；滑過文章標題時微微右移（學員 T49；她怕頭暈，要求克制）",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/"
+  ],
+  "preserved": "內容、版面位置、配色、字體；prefers-reduced-motion 與無 JavaScript 時內容立即可見",
+  "sourceCommit": "53cddc8438143160d2c56cc7ca882faabac79ba8",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false
+}
+
+> prebuild
+> node scripts/theme-css.mjs
+
+theme.css 已由 site.config.json 產生
+
+> build
+> node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector "[data-pagefind-body]" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs
+
+16:14:42 [content] Syncing content
+16:14:43 [content] Synced content
+16:14:43 [types] Generated 448ms
+16:14:43 [build] output: "static"
+16:14:43 [build] mode: "static"
+16:14:43 [build] directory: /home/user/atp-run2/knowledge/dist/
+16:14:43 [build] Collecting build info...
+16:14:43 [build] ✓ Completed in 460ms.
+16:14:43 [build] Building static entrypoints...
+16:14:44 [vite] ✓ built in 1.01s
+16:14:44 [build] ✓ Completed in 1.03s.
+
+ generating static routes 
+16:14:44 ▶ src/pages/404.astro
+16:14:44   └─ /404.html (+10ms) 
+16:14:44 ▶ src/pages/[...page].astro
+16:14:44 ▶ src/pages/about/index.astro
+16:14:44   └─ /about/index.html (+4ms) 
+16:14:44 ▶ src/pages/articles/[slug].astro
+16:14:44   ├─ /articles/phone-in-another-room/index.html (+4ms) 
+16:14:44   ├─ /articles/three-things-before-a-meeting/index.html (+2ms) 
+16:14:44   └─ /articles/why-i-write-reading-notes/index.html (+2ms) 
+16:14:44 ▶ src/pages/articles/index.astro
+16:14:44   └─ /articles/index.html (+2ms) 
+16:14:44 ▶ src/pages/index.astro
+16:14:44   └─ /index.html (+2ms) 
+16:14:44 λ src/pages/robots.txt.js
+16:14:44   └─ /robots.txt (+1ms) 
+16:14:44 λ src/pages/rss.xml.js
+16:14:44   └─ /rss.xml (+2ms) 
+16:14:44 ▶ src/pages/search.astro
+16:14:44   └─ /search/index.html (+2ms) 
+16:14:44 λ src/pages/sitemap.xml.js
+16:14:44   └─ /sitemap.xml (+1ms) 
+16:14:44 ▶ src/pages/topics/[slug].astro
+16:14:44 ▶ src/pages/topics/index.astro
+16:14:44   └─ /topics/index.html (+2ms) 
+16:14:44 ✓ Completed in 53ms.
+
+16:14:44 [build] 9 page(s) built in 1.56s
+16:14:44 [build] Complete!
+
+Running Pagefind v1.6.0 (Extended)
+Running from: "/home/user/atp-run2/knowledge"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 9 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-hant
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 3 pages
+  Indexed 672 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Pagefind found references to the Default UI (pagefind-ui.js)           │
+│  on your site. The Default UI is supported and will continue            │
+│  to work.                                                               │
+│                                                                         │
+│  As of 1.5.0, if you are setting up a new integration, use the          │
+│  Component UI instead. It includes a search modal, better               │
+│  accessibility and customization: https://pagefind.app/docs/search-ui/  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Finished in 0.013 seconds
+Supplemental Chinese search index: 8 pages. Pagefind is separate.
+Independent internal routes PASS: 9
+{
+  "schemaVersion": 1,
+  "id": "gentle-motion",
+  "mode": "motion",
+  "scope": "輕微動效（subtle）：進首頁時便條與文章依序淡入上移一次；滑過文章標題時微微右移（學員 T49；她怕頭暈，要求克制）",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/"
+  ],
+  "preserved": "內容、版面位置、配色、字體；prefers-reduced-motion 與無 JavaScript 時內容立即可見",
+  "sourceCommit": "53cddc8438143160d2c56cc7ca882faabac79ba8",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false,
+  "currentCommit": "a229dcd5a9ac7d8826978bd3882df3f805d44da6",
+  "changed": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "unexpected": [],
+  "status": "SCOPE_PASS",
+  "note": "This checks Git file scope only, not rendered appearance or release approval."
+}
