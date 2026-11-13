@@ -1,5 +1,5 @@
 ---
-title: "手機放在另一個房間"
+title: "先把繩子收起來"
 description: "注意力不是靠忍耐守住的，是靠環境省下來的。"
 publishedAt: 2026-11-13
 tags: ["注意力"]
