@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "note-gap",
+  "mode": "local-ui",
+  "scope": "首頁便條問候語與下方直線之間加一點空隙（學員 T47）",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/"
+  ],
+  "preserved": "便條樣式、筆記本列表、其他頁面、文章內容",
+  "sourceCommit": "ec53ad9d1874ccb441b9857ad3655c7ae786d378",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false
+}
+
+> prebuild
+> node scripts/theme-css.mjs
+
+theme.css 已由 site.config.json 產生
+
+> build
+> node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector "[data-pagefind-body]" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs
+
+16:12:54 [content] Syncing content
+16:12:54 [content] Synced content
+16:12:54 [types] Generated 471ms
+16:12:54 [build] output: "static"
+16:12:54 [build] mode: "static"
+16:12:54 [build] directory: /home/user/atp-run2/knowledge/dist/
+16:12:54 [build] Collecting build info...
+16:12:54 [build] ✓ Completed in 493ms.
+16:12:54 [build] Building static entrypoints...
+16:12:55 [vite] ✓ built in 1.30s
+16:12:55 [build] ✓ Completed in 1.32s.
+
+ generating static routes 
+16:12:55 ▶ src/pages/404.astro
+16:12:55   └─ /404.html (+17ms) 
+16:12:55 ▶ src/pages/[...page].astro
+16:12:55 ▶ src/pages/about/index.astro
+16:12:55   └─ /about/index.html (+3ms) 
+16:12:55 ▶ src/pages/articles/[slug].astro
+16:12:55   ├─ /articles/phone-in-another-room/index.html (+3ms) 
+16:12:55   ├─ /articles/three-things-before-a-meeting/index.html (+2ms) 
+16:12:55   └─ /articles/why-i-write-reading-notes/index.html (+2ms) 
+16:12:55 ▶ src/pages/articles/index.astro
+16:12:55   └─ /articles/index.html (+6ms) 
+16:12:55 ▶ src/pages/index.astro
+16:12:55   └─ /index.html (+3ms) 
+16:12:55 λ src/pages/robots.txt.js
+16:12:55   └─ /robots.txt (+2ms) 
+16:12:55 λ src/pages/rss.xml.js
+16:12:55   └─ /rss.xml (+2ms) 
+16:12:55 ▶ src/pages/search.astro
+16:12:55   └─ /search/index.html (+3ms) 
+16:12:55 λ src/pages/sitemap.xml.js
+16:12:55   └─ /sitemap.xml (+2ms) 
+16:12:55 ▶ src/pages/topics/[slug].astro
+16:12:55 ▶ src/pages/topics/index.astro
+16:12:55   └─ /topics/index.html (+3ms) 
+16:12:55 ✓ Completed in 70ms.
+
+16:12:55 [build] 9 page(s) built in 1.90s
+16:12:55 [build] Complete!
+
+Running Pagefind v1.6.0 (Extended)
+Running from: "/home/user/atp-run2/knowledge"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 9 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-hant
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 3 pages
+  Indexed 672 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Pagefind found references to the Default UI (pagefind-ui.js)           │
+│  on your site. The Default UI is supported and will continue            │
+│  to work.                                                               │
+│                                                                         │
+│  As of 1.5.0, if you are setting up a new integration, use the          │
+│  Component UI instead. It includes a search modal, better               │
+│  accessibility and customization: https://pagefind.app/docs/search-ui/  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Finished in 0.012 seconds
+Supplemental Chinese search index: 8 pages. Pagefind is separate.
+Independent internal routes PASS: 9
+{
+  "schemaVersion": 1,
+  "id": "note-gap",
+  "mode": "local-ui",
+  "scope": "首頁便條問候語與下方直線之間加一點空隙（學員 T47）",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/"
+  ],
+  "preserved": "便條樣式、筆記本列表、其他頁面、文章內容",
+  "sourceCommit": "ec53ad9d1874ccb441b9857ad3655c7ae786d378",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false,
+  "currentCommit": "771578a4bc4e8876b5c4539cab9c39ffb2dc2898",
+  "changed": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "unexpected": [],
+  "status": "SCOPE_PASS",
+  "note": "This checks Git file scope only, not rendered appearance or release approval."
+}
