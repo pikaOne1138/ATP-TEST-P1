@@ -1,0 +1,10 @@
+
+> check:context
+> node scripts/check-project-context.mjs
+
+{
+  "ok": true,
+  "expected": "sidebar-journal",
+  "recorded": "sidebar-journal",
+  "errors": []
+}

@@ -1,0 +1,2 @@
+Package  Current  Wanted  Latest  Location            Depended by
+astro     5.18.2  5.18.2  7.4.11  node_modules/astro  clean-check

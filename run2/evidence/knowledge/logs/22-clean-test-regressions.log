@@ -1,0 +1,31 @@
+
+> test:regressions
+> node scripts/test-generated-link-audit.mjs && node scripts/test-site-output-regressions.mjs && node scripts/test-release-readiness.mjs
+
+N5 F06 source HTML link and footer link positive/negative regression PASS
+PASS generated link auditor positive and negative regression
+F00 clean draft: PASS
+F12 public page missing meta description: correctly rejected with verified error signature
+F12 restored metadata: PASS
+F09 preview missing noindex: correctly rejected with verified error signature
+F09 restored preview noindex: PASS
+F09 explicitly approved production indexing: PASS
+W6 placeholder content NOTICE rather than FAIL: PASS
+draft in homepage: correctly rejected with verified error signature
+F13 draft in RSS: correctly rejected with verified error signature
+draft in sitemap: correctly rejected with verified error signature
+draft HTML route: correctly rejected with verified error signature
+F05 isolated draft clean output: PASS
+isolated draft leaked in homepage: correctly rejected with verified error signature
+F04 short Chinese draft title leaked: correctly rejected with verified error signature
+F03 N6 draft in public JSON search: correctly rejected with verified error signature
+clean public JSON: PASS
+Private Chinese scratch note with no frontmatter: PASS
+Generic navigation title is not a private draft leak: PASS
+Unique private draft body still blocked: correctly rejected with verified error signature
+F11 missing Pagefind index: correctly rejected with verified error signature
+F11 missing Chinese index: correctly rejected with verified error signature
+F11 malformed Chinese index: correctly rejected with verified error signature
+F11 restored search baseline: PASS
+Draft regression proof: 13 faults rejected with contract-specific diagnostics; 9 positive controls; 1 NOTICE
+Release gate regression fixtures PASS (negative and positive technical checks; no human release approval claimed).

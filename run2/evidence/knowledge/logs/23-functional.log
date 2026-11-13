@@ -1,0 +1,35 @@
+PASS GET / 200
+PASS GET /articles/ 200
+PASS GET /articles/why-i-write-reading-notes/ 200
+PASS GET /articles/three-things-before-a-meeting/ 200
+PASS GET /articles/phone-in-another-room/ 200
+PASS GET /about/ 200
+PASS GET /search/ 200
+PASS GET /rss.xml 200
+PASS GET /sitemap.xml 200
+PASS GET /robots.txt 200
+PASS GET /brand-mark.svg 200
+PASS 404 for missing page 404
+PASS home internal links (8) 
+PASS nav → 文章 
+PASS list → article /articles/phone-in-another-room/
+PASS article has h1 + body 
+PASS article shows 其他文章 
+PASS search 繩子 → 1 result ["先把繩子收起來"]
+PASS search 開會 ["開會前五分鐘我會做的三件事"]
+PASS search 讀書筆記 ≥1 ["為什麼我開始寫讀書筆記","先把繩子收起來"]
+FAIL search nonsense → no results ["開會前五分鐘我會做的三件事","為什麼我開始寫讀書筆記"]
+PASS search latin nonsense → no results []
+PASS search UI Traditional Chinese (no 搜索/结果) 
+PASS keyboard: Tab reaches search box tabs=7
+PASS keyboard: Enter opens result /articles/phone-in-another-room/
+PASS skip link first in tab order 跳到主要內容
+PASS focus outline visible on article link solid 3px
+PASS mobile nav 3 text links visible [{"t":"文章","h":44},{"t":"關於我","h":44},{"t":"搜尋","h":44}]
+PASS mobile no menu toggle button visible 
+PASS mobile nav → 關於我 
+PASS mobile no horizontal overflow 
+PASS html lang zh-Hant 
+PASS favicon link present 
+PASS noindex set (not yet public) 
+PASS no JS errors 
