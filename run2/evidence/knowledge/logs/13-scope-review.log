@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "handbook-feel",
+  "mode": "reference",
+  "scope": "手機頁首兩個框框按鈕改為純文字連結；首頁與文章列表每篇加小編號；頁面最上方加一句手寫感問候語（參考站無網址，依學員口述三項特徵）",
+  "paths": [
+    "src/components/StudentNavigation.astro",
+    "src/components/layouts/expanded/Page.astro",
+    "src/components/layouts/expanded/content.mjs",
+    "src/layouts/SiteLayout.astro",
+    "site.config.json"
+  ],
+  "pages": [
+    "/",
+    "/articles/",
+    "/articles/phone-in-another-room/",
+    "/about/",
+    "/search/"
+  ],
+  "preserved": "文章內容與網址、配色（D-007）、宋體標題與中文日期（D-009／D-010）、搜尋範圍（D-011）、側欄日誌版型（D-001）、不加英文小字與口號大標",
+  "sourceCommit": "67262c7e94d37aa3c84d6fc9edfbed1b64587959",
+  "branch": "design/handbook-feel",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false,
+  "currentCommit": "864931e53433f5dcc0337bb3c7a0fc00b4ba6e8b",
+  "changed": [
+    "site.config.json",
+    "src/components/layouts/expanded/Page.astro",
+    "src/components/layouts/expanded/content.mjs",
+    "src/layouts/SiteLayout.astro"
+  ],
+  "unexpected": [],
+  "status": "SCOPE_PASS",
+  "note": "This checks Git file scope only, not rendered appearance or release approval."
+}
