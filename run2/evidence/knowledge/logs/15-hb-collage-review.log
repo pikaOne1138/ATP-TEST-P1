@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "hb-collage",
+  "mode": "candidates",
+  "scope": "手帳感候選 hb-collage：只調整首頁與文章列表的樣式",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/"
+  ],
+  "preserved": "版型、配色、字體、文章內容與網址、搜尋、手機頁首文字連結",
+  "sourceCommit": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "branch": "design/hb-collage",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false,
+  "currentCommit": "d2cbfd32f349fd78b23ab56b5c3e5e37dcb2ce91",
+  "changed": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "unexpected": [],
+  "status": "SCOPE_PASS",
+  "note": "This checks Git file scope only, not rendered appearance or release approval."
+}

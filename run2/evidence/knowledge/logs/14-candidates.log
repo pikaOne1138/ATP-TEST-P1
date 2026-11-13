@@ -1,0 +1,120 @@
+$ node scripts/design-session.mjs init --site 語庭的讀書筆記 --scope 手帳感的程度（同一版型的三個選項；首頁與文章列表）
+Saved local design session (init); no website files changed.
+$ node scripts/design-session.mjs preserve --text 側欄日誌版型、暖紙色與墨綠、宋體標題、中文日期、搜尋範圍、手機頁首純文字連結、文章內容與網址、問候語「慢慢讀，不急。」原文
+Saved local design session (preserve); no website files changed.
+$ node scripts/design-session.mjs add --id hb-light --title 淡：只有一句手寫 --first 手寫問候語加波浪底線，下面是原本的文章列表 --flow 問候語、最近的文章、列表（編號與日期同一行） --mobile 與電腦相同，單欄 --tradeoff 最安靜，但手帳感只在最上面一句
+Saved local design session (add); no website files changed.
+$ node scripts/design-session.mjs add --id hb-notebook --title 中：筆記本內頁 --first 點點紙底、左側一條赭色邊線，編號寫在邊線外 --flow 問候語、最近的文章、虛線分隔的列表；文章列表頁同樣有邊線 --mobile 邊線與編號保留，內文欄變窄，長標題多斷一行 --tradeoff 手帳感明顯且仍安靜；手機可讀寬度變小
+Saved local design session (add); no website files changed.
+$ node scripts/design-session.mjs add --id hb-collage --title 濃：貼滿的手帳 --first 問候語是貼上去的便條紙，每篇文章是一張用紙膠帶貼住的紙片 --flow 便條、最近的文章、一張張紙片（圓章編號、標籤框） --mobile 紙片單欄堆疊，圓章在右上角 --tradeoff 最有手帳感，但裝飾最多、離「安靜」最遠，文章多時頁面變長
+Saved local design session (add); no website files changed.
+$ node scripts/design-worktrees.mjs create --id hb-light --dir ../knowledge-evidence3/candidates/hb-light
+{
+  "branch": "design/hb-light",
+  "path": "/home/user/atp-run2/knowledge-evidence3/candidates/hb-light",
+  "base": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "published": false
+}
+$ node scripts/design-worktrees.mjs create --id hb-notebook --dir ../knowledge-evidence3/candidates/hb-notebook
+{
+  "branch": "design/hb-notebook",
+  "path": "/home/user/atp-run2/knowledge-evidence3/candidates/hb-notebook",
+  "base": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "published": false
+}
+$ node scripts/design-worktrees.mjs create --id hb-collage --dir ../knowledge-evidence3/candidates/hb-collage
+{
+  "branch": "design/hb-collage",
+  "path": "/home/user/atp-run2/knowledge-evidence3/candidates/hb-collage",
+  "base": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "published": false
+}
+$ node scripts/design-worktrees.mjs list
+[
+  {
+    "path": "/home/user/atp-run2/knowledge",
+    "branch": "refs/heads/design/handbook-feel",
+    "head": "61cc54b79c419635ea571b72d8baa1132b7a2f7f"
+  },
+  {
+    "path": "/home/user/atp-run2/knowledge-evidence3/candidates/hb-collage",
+    "branch": "refs/heads/design/hb-collage",
+    "head": "61cc54b79c419635ea571b72d8baa1132b7a2f7f"
+  },
+  {
+    "path": "/home/user/atp-run2/knowledge-evidence3/candidates/hb-light",
+    "branch": "refs/heads/design/hb-light",
+    "head": "61cc54b79c419635ea571b72d8baa1132b7a2f7f"
+  },
+  {
+    "path": "/home/user/atp-run2/knowledge-evidence3/candidates/hb-notebook",
+    "branch": "refs/heads/design/hb-notebook",
+    "head": "61cc54b79c419635ea571b72d8baa1132b7a2f7f"
+  }
+]
+npm warn deprecated tsconfck@3.1.6: unmaintained
+
+added 284 packages in 5s
+{
+  "schemaVersion": 1,
+  "id": "hb-light",
+  "mode": "candidates",
+  "scope": "手帳感候選 hb-light：只調整首頁與文章列表的樣式",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/"
+  ],
+  "preserved": "版型、配色、字體、文章內容與網址、搜尋、手機頁首文字連結",
+  "sourceCommit": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "branch": "design/hb-light",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false
+}
+npm warn deprecated tsconfck@3.1.6: unmaintained
+
+added 284 packages in 3s
+{
+  "schemaVersion": 1,
+  "id": "hb-notebook",
+  "mode": "candidates",
+  "scope": "手帳感候選 hb-notebook：只調整首頁與文章列表的樣式",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/"
+  ],
+  "preserved": "版型、配色、字體、文章內容與網址、搜尋、手機頁首文字連結",
+  "sourceCommit": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "branch": "design/hb-notebook",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false
+}
+npm warn deprecated tsconfck@3.1.6: unmaintained
+
+added 284 packages in 4s
+{
+  "schemaVersion": 1,
+  "id": "hb-collage",
+  "mode": "candidates",
+  "scope": "手帳感候選 hb-collage：只調整首頁與文章列表的樣式",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "pages": [
+    "/",
+    "/articles/"
+  ],
+  "preserved": "版型、配色、字體、文章內容與網址、搜尋、手機頁首文字連結",
+  "sourceCommit": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "branch": "design/hb-collage",
+  "humanVisualReview": "NOT TESTED",
+  "deployment": "NOT VERIFIED",
+  "releaseApproved": false
+}

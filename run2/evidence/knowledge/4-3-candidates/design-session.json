@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "site": "語庭的讀書筆記",
+  "scope": "手帳感的程度（同一版型的三個選項；首頁與文章列表）",
+  "preserve": [
+    "側欄日誌版型、暖紙色與墨綠、宋體標題、中文日期、搜尋範圍、手機頁首純文字連結、文章內容與網址、問候語「慢慢讀，不急。」原文"
+  ],
+  "options": [
+    {
+      "id": "hb-light",
+      "title": "淡：只有一句手寫",
+      "firstScreen": "手寫問候語加波浪底線，下面是原本的文章列表",
+      "sectionFlow": "問候語、最近的文章、列表（編號與日期同一行）",
+      "mobileFlow": "與電腦相同，單欄",
+      "tradeoff": "最安靜，但手帳感只在最上面一句",
+      "status": "proposed",
+      "reason": null
+    },
+    {
+      "id": "hb-notebook",
+      "title": "中：筆記本內頁",
+      "firstScreen": "點點紙底、左側一條赭色邊線，編號寫在邊線外",
+      "sectionFlow": "問候語、最近的文章、虛線分隔的列表；文章列表頁同樣有邊線",
+      "mobileFlow": "邊線與編號保留，內文欄變窄，長標題多斷一行",
+      "tradeoff": "手帳感明顯且仍安靜；手機可讀寬度變小",
+      "status": "proposed",
+      "reason": null
+    },
+    {
+      "id": "hb-collage",
+      "title": "濃：貼滿的手帳",
+      "firstScreen": "問候語是貼上去的便條紙，每篇文章是一張用紙膠帶貼住的紙片",
+      "sectionFlow": "便條、最近的文章、一張張紙片（圓章編號、標籤框）",
+      "mobileFlow": "紙片單欄堆疊，圓章在右上角",
+      "tradeoff": "最有手帳感，但裝飾最多、離「安靜」最遠，文章多時頁面變長",
+      "status": "proposed",
+      "reason": null
+    }
+  ],
+  "notes": {
+    "confirmed": [],
+    "rejected": [],
+    "pending": []
+  },
+  "selectedId": null,
+  "publicationApproved": false
+}

@@ -1,0 +1,17 @@
+
+> verify
+> node scripts/gates.mjs --mode preview
+
+# 發布關卡（preview）
+
+- G-01 正式網址 WARN：網站的正式網址還沒設定好（現在是範例值或格式不對），這樣上線的話，分享連結和搜尋引擎都會指向錯誤的網址。請先決定正式網址再發布。
+- G-02 佔位文字 PASS
+- G-03 服務事實 PASS
+- G-04 預約與聯絡 PASS
+- G-05 密鑰掃描 PASS
+- G-09 草稿與預覽不外洩 PASS
+- G-11 設計一致性 PASS
+- G-08 環境能力報告 WARN：還沒做過（或環境已改變）的環境檢查。請請 AI 先跑環境檢查，再照結果選路線。
+  [G-01] RELEASE_URL: set SITE_URL or site.config.json site to the real HTTPS production origin
+  [G-08] no capability report yet; run npm run preflight -- --write
+  [G-08] never checked
