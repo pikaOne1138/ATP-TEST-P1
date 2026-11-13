@@ -1,0 +1,20 @@
+
+> preflight
+> node scripts/preflight.mjs
+
+G-08 環境能力報告（唯讀；unknown 代表查不到，不是通過）
+{
+  "git": true,
+  "repoInitialized": true,
+  "remote": "configured",
+  "node": {
+    "version": "v22.23.4",
+    "required": null,
+    "satisfied": null
+  },
+  "workflowFilesPresent": true,
+  "workflowPush": "unknown",
+  "deployConnected": "unknown"
+}
+- 能否推送 .github/workflows 未知 → 若推送被拒（403），改產生三步手動指引讓學員在 GitHub 網頁建立檔案；不要用破壞性推送試權限。
+- 部署平台連接未知 → 請學員在平台畫面確認，或提供唯讀查詢結果；未確認前 G-07 列 NOT TESTED。

@@ -1,0 +1,111 @@
+
+> prebuild
+> node scripts/theme-css.mjs
+
+theme.css 已由 site.config.json 產生
+
+> build
+> node scripts/clean-build.mjs && astro build && pagefind --site dist --root-selector "[data-pagefind-body]" && node scripts/build-exact-search.mjs && node scripts/verify-navigation.mjs
+
+05:41:00 [content] Syncing content
+05:41:00 [content] Synced content
+05:41:00 [types] Generated 1.07s
+05:41:00 [build] output: "static"
+05:41:00 [build] mode: "static"
+05:41:00 [build] directory: /home/user/atp-run2/knowledge/dist/
+05:41:00 [build] Collecting build info...
+05:41:00 [build] ✓ Completed in 1.08s.
+05:41:00 [build] Building static entrypoints...
+05:41:02 [vite] ✓ built in 1.42s
+05:41:02 [build] ✓ Completed in 1.45s.
+
+ generating static routes 
+05:41:02 ▶ src/pages/404.astro
+05:41:02   └─ /404.html (+10ms) 
+05:41:02 ▶ src/pages/[...page].astro
+05:41:02 ▶ src/pages/about/index.astro
+05:41:02   └─ /about/index.html (+3ms) 
+05:41:02 ▶ src/pages/articles/[slug].astro
+05:41:02   ├─ /articles/phone-in-another-room/index.html (+4ms) 
+05:41:02   ├─ /articles/three-things-before-a-meeting/index.html (+2ms) 
+05:41:02   └─ /articles/why-i-write-reading-notes/index.html (+2ms) 
+05:41:02 ▶ src/pages/articles/index.astro
+05:41:02   └─ /articles/index.html (+3ms) 
+05:41:02 ▶ src/pages/index.astro
+05:41:02   └─ /index.html (+3ms) 
+05:41:02 λ src/pages/robots.txt.js
+05:41:02   └─ /robots.txt (+2ms) 
+05:41:02 λ src/pages/rss.xml.js
+05:41:02   └─ /rss.xml (+2ms) 
+05:41:02 ▶ src/pages/search.astro
+05:41:02   └─ /search/index.html (+2ms) 
+05:41:02 λ src/pages/sitemap.xml.js
+05:41:02   └─ /sitemap.xml (+1ms) 
+05:41:02 ▶ src/pages/topics/[slug].astro
+05:41:02 ▶ src/pages/topics/index.astro
+05:41:02   └─ /topics/index.html (+3ms) 
+05:41:02 ✓ Completed in 55ms.
+
+05:41:02 [build] 9 page(s) built in 2.60s
+05:41:02 [build] Complete!
+
+Running Pagefind v1.6.0 (Extended)
+Running from: "/home/user/atp-run2/knowledge"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 9 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-hant
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 3 pages
+  Indexed 672 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Pagefind found references to the Default UI (pagefind-ui.js)           │
+│  on your site. The Default UI is supported and will continue            │
+│  to work.                                                               │
+│                                                                         │
+│  As of 1.5.0, if you are setting up a new integration, use the          │
+│  Component UI instead. It includes a search modal, better               │
+│  accessibility and customization: https://pagefind.app/docs/search-ui/  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Finished in 0.242 seconds
+Supplemental Chinese search index: 8 pages. Pagefind is separate.
+Independent internal routes PASS: 9
+
+> qa:responsive
+> node scripts/qa-student-responsive.mjs
+
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Executable doesn't exist at /opt/pw-browsers/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at /home/user/atp-run2/knowledge/scripts/qa-student-responsive.mjs:90:28 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v22.23.4
+Design capture: Command failed: npm run qa:responsive

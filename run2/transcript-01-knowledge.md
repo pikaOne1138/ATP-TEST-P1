@@ -572,3 +572,36 @@ C 比較像我想要的，一篇一篇往下讀，比較安靜。A 的顏色我�
 
 > 總監註記：4-1 的三項修改獲學員確認。她再次提到「手機最上面兩個框框按鈕」——這是健檢第 4 項，建站 AI ② 當時建議先不改。
 > **第二次接手測試**：建站 AI ② 的對話已很長，依計畫改由第三個全新的建站 AI（建站 AI ③）接手階段 4 其餘項目；它同樣只看得到專案資料夾。與計畫的差異：沒有另外請建站 AI ② 做最後一輪交接更新（它每一輪都已同步更新 `PROJECT.md`），所以 T37 這則回覆不在專案紀錄內，由學員在新對話開場時自己轉述。
+
+**T38｜建站 AI ③（接手後第一則）**
+
+語庭你好，我接手了，之前的紀錄都讀過（暖紙色、墨綠、書裡的字、中文日期、搜尋，都不會動）。
+
+手機那兩個框框：我看了，確實像表單按鈕，而且「閱讀文章」和選單裡的「文章」是同一個地方。我打算把兩個框框拿掉，改成一排純文字「文章　關於我　搜尋」。
+
+朋友的網站：沒有連結我看不到它，所以不會說「做得像它」。我只照你記得的三件事做，不抄別人的東西：
+1. 文章列表每篇旁邊加小小的編號
+2. 最上面放一句手寫感的問候語
+3. 整體往「手帳」靠一點（先做前兩樣給你看，再決定要不要更多）
+
+之後若找到連結或截圖，丟給我就能對得更準。
+
+會動到：手機最上面那一塊、首頁和文章列表。
+不動：你的文章內容、顏色、字、網址、搜尋。
+這只是試作，不會公開，做好先截圖給你看。
+
+只問一件事：最上面那句問候語，你想寫什麼？（說「你先幫我想」也可以，我會標明是我的建議稿。）
+
+> 總監註記：**第二次接手 PASS**——建站 AI ③ 只憑專案資料就掌握現況，並查出兩個框框來自共用元件 `src/components/StudentNavigation.astro`。
+> 它讀的 Skill：`astro-site-entry`、`astro-site-maintenance/references/design-improvement.md`、`astro-design-consultation` 與其兩份 references、`scripts/design-scope.mjs`、`scripts/design-qa.mjs`。
+> **Skill 缺口（無網址的參考）**：設計諮詢 Skill 只寫「未收到網址時請求網址或截圖」「看不到就明說、不假裝看過、不複製品牌資產」，沒有「學員明說給不出」的分支。它的處理：不重問，把她記得的三點當成她自己的偏好，並明說「不會說做得像它」。
+> **Skill 矛盾**：`design-scope` 把 `PROJECT.md` 列為禁改檔，但設計改善流程第 5 步又要求寫回 `PROJECT.md`，任務期間一動就會讓 `review` FAIL。
+> 其他缺失：`AGENTS.md` 引用的 `docs/student-builder-pack/CUSTOMIZATION-GUIDE.md` 在學員站不存在；先前的設計修改沒有任何範圍登記紀錄（總監在 4-1 造成）。
+> 它已建本機分支 `design/handbook-feel`。
+> **總監執行（這次完整照 Skill 流程）**：`npm run status` exit 0；`npm run preflight` exit 0；`design-scope start --mode reference` exit 0（寫入 `qa-artifacts/design-task-handbook-feel.json`）；`design-qa capture --stage before` **exit 1 受阻**（內部呼叫 `qa:responsive`，專案的 Playwright 與本機瀏覽器版本不合）。**Skill 的前後對照工具鏈在此環境整條受阻。**
+
+**T39｜學員（SIMULATED）**
+
+嗯……我想一下。寫「慢慢讀，不急。」好了，不要太熱情的那種。
+
+那兩個框框拿掉我覺得可以。

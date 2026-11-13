@@ -1,0 +1,19 @@
+
+> status
+> node scripts/site-status.mjs
+
+{
+  "git": true,
+  "branch": "design/handbook-feel",
+  "head": "67262c7e94d37aa3c84d6fc9edfbed1b64587959",
+  "upstream": null,
+  "hasRemote": true,
+  "dirtyCount": 0,
+  "dirtyPaths": [],
+  "conflicts": 0,
+  "mergeOrRebase": false,
+  "stopBeforeEdit": false,
+  "reviewBeforeEdit": false,
+  "productionPushApprovalRequired": false,
+  "note": "Dirty changes require overlap review, not automatic global blocking; never reset, discard or force push."
+}
