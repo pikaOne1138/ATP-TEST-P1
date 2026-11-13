@@ -24,7 +24,7 @@ const indexUrl=root+(site.kind==='knowledge'?'articles/':'services/'),detailUrl=
 <div data-article-count={route==='articles'||(route===''&&site.kind==='knowledge')?site.articles.length:undefined} data-service-count={route==='services'?site.services.length:undefined} data-native-page="sidebar-journal" class="journal">
   <div class="frame">
     <aside class="rail" aria-label="網站側欄" data-pagefind-ignore>
-      <a class="brand" href={base}><OwnerImage role="logo"/></a>
+      <a class="brand" href={base}><img class="brand-mark" src={base+'brand-mark.svg'} alt="" width="26" height="26"/><OwnerImage role="logo"/></a>
       <p class="rail-intro">{site.intro}</p>
       <StudentNavigation/>
       {site.hasBio&&route!=='about'&&<div class="rail-bottom"><p>{site.bio}</p><a href={base+'about/'}>關於我 →</a></div>}
@@ -66,6 +66,9 @@ const indexUrl=root+(site.kind==='knowledge'?'articles/':'services/'),detailUrl=
 .entry .no{top:20px}.entry:first-child .no{top:-4px}.archive .no{top:30px}
 /* 學員 T45：手機左邊留白縮小，減少標題斷行 */
 @media(max-width:700px){.hello{margin-left:0;margin-top:36px;margin-bottom:22px;padding:14px 20px 10px}.desk,.archive{padding-left:34px}.pagehead{padding-left:34px}.desk::before,.archive::before{left:24px}.entry .no,.entry:first-child .no,.archive .no{left:-34px;width:20px;font-size:17px}.archive .no{top:36px}}
+/* 學員 T49：站名旁的書籤記號 */
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand-mark{width:26px;height:26px;flex:none}
 </style>
 <style>.native-extra{padding:32px 0 48px;font-size:18px}.native-extra :global(h1){font:400 clamp(30px,3.4vw,46px)/1.3 var(--font-heading);letter-spacing:-.01em;margin:24px 0}.native-extra :global(.interior){padding:0;margin:0;width:auto;max-width:38em} .native-extra h1{overflow-wrap:anywhere} :global(.student-navigation){min-width:0} h1{overflow-wrap:anywhere;text-wrap:balance} .prose :global(pre),.prose :global(table){max-width:100%;overflow:auto} .prose :global(table){display:block}</style>
 
