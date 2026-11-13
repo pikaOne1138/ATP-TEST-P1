@@ -1,0 +1,29 @@
+$ node scripts/design-session.mjs choose --id hb-notebook --reason 學員 T45：「文章列表我喜歡 B 的，左邊一條線、編號寫在外面，很像筆記本。」 另：問候語要 C 的便條樣式（只有那一張）；B 手機左邊空太多、標題斷行可惜
+Saved local design session (choose); no website files changed.
+$ node scripts/design-session.mjs reject --id hb-collage --reason 學員 T45：C 的文章列表太花，每篇都貼膠帶、圈圈跟框框，看久了會累（只保留便條問候語）
+Saved local design session (reject); no website files changed.
+$ node scripts/design-session.mjs reject --id hb-light --reason 學員 T45 未選；她要比 A 更多的手帳感
+Saved local design session (reject); no website files changed.
+$ node scripts/design-adopt.mjs inspect --id hb-notebook --paths src/components/layouts/expanded/Page.astro --approval 學員 T45：「文章列表我喜歡 B 的，左邊一條線、編號寫在外面，很像筆記本。」
+{
+  "status": "READY_TO_REVIEW",
+  "source": "design/hb-notebook",
+  "base": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "candidateSha": "58c945e15eea51c3aed396eda9ed93cbdd8f33d5",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "omitted": [],
+  "instruction": "Review git diff and run Build/QA; no commit, PR, merge or deploy was performed."
+}
+{
+  "status": "APPLIED_UNCOMMITTED",
+  "source": "design/hb-notebook",
+  "base": "61cc54b79c419635ea571b72d8baa1132b7a2f7f",
+  "candidateSha": "58c945e15eea51c3aed396eda9ed93cbdd8f33d5",
+  "paths": [
+    "src/components/layouts/expanded/Page.astro"
+  ],
+  "omitted": [],
+  "instruction": "Review git diff and run Build/QA; no commit, PR, merge or deploy was performed."
+}
