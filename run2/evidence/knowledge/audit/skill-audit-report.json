@@ -1,0 +1,1757 @@
+[
+  {
+    "path": "/",
+    "width": 1440,
+    "fail": [
+      "對比不足 3（例 div.meta:1, div.meta:1）"
+    ],
+    "warn": [],
+    "metrics": {
+      "vw": 1440,
+      "hScroll": 0,
+      "pageHeight": 1026,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 22,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        24,
+        32,
+        36,
+        46
+      ],
+      "contrastFail": 3,
+      "contrastSamples": [
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 閱"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 工"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 46,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 1,
+        "height": 1,
+        "lines": 0,
+        "vwRatio": 0.032,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 10,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1440,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.journal",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/",
+    "width": 1280,
+    "fail": [
+      "對比不足 3（例 div.meta:1, div.meta:1）"
+    ],
+    "warn": [],
+    "metrics": {
+      "vw": 1280,
+      "hScroll": 0,
+      "pageHeight": 1026,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 22,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        24,
+        32,
+        36,
+        43.5
+      ],
+      "contrastFail": 3,
+      "contrastSamples": [
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 閱"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 工"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 43.5,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 1,
+        "height": 1,
+        "lines": 0,
+        "vwRatio": 0.034,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 10,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1280,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "fail": [
+      "對比不足 3（例 div.meta:1, div.meta:1）"
+    ],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 768,
+      "hScroll": 0,
+      "pageHeight": 1024,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 22,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        24,
+        30,
+        32
+      ],
+      "contrastFail": 3,
+      "contrastSamples": [
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 閱"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 工"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 1,
+        "height": 1,
+        "lines": 0,
+        "vwRatio": 0.039,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 171,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 11
+      },
+      "images": [],
+      "touch": {
+        "total": 10,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 171x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 768,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/",
+    "width": 390,
+    "fail": [
+      "對比不足 3（例 div.meta:1, div.meta:1）"
+    ],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 390,
+      "hScroll": 0,
+      "pageHeight": 1650,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 21,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        18,
+        19,
+        24,
+        30,
+        32
+      ],
+      "contrastFail": 3,
+      "contrastSamples": [
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 閱"
+        },
+        {
+          "s": "div.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11 ・ 工"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 1,
+        "height": 1,
+        "lines": 0,
+        "vwRatio": 0.077,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 302,
+        "fs": 19,
+        "lh": 1.95,
+        "approxCharsPerLine": 16
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 350x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 390,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.body",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/",
+    "width": "reduced-motion",
+    "infiniteAnimationsRunning": 0
+  },
+  {
+    "path": "/articles/",
+    "width": 1440,
+    "fail": [
+      "對比不足 4（例 p.eyebrow:1, span.meta:1）"
+    ],
+    "warn": [],
+    "metrics": {
+      "vw": 1440,
+      "hScroll": 0,
+      "pageHeight": 929,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 21,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        24,
+        36,
+        46
+      ],
+      "contrastFail": 4,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "共 3 篇"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13注意力"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11閱讀"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11工作方法"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 46,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 760,
+        "height": 60,
+        "lines": 1,
+        "vwRatio": 0.032,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1440,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.journal",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/",
+    "width": 1280,
+    "fail": [
+      "對比不足 4（例 p.eyebrow:1, span.meta:1）"
+    ],
+    "warn": [],
+    "metrics": {
+      "vw": 1280,
+      "hScroll": 0,
+      "pageHeight": 926,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 21,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        24,
+        36,
+        43.5
+      ],
+      "contrastFail": 4,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "共 3 篇"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13注意力"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11閱讀"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11工作方法"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 43.5,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 760,
+        "height": 57,
+        "lines": 1,
+        "vwRatio": 0.034,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1280,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/",
+    "width": 768,
+    "fail": [
+      "對比不足 4（例 p.eyebrow:1, span.meta:1）"
+    ],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 768,
+      "hScroll": 0,
+      "pageHeight": 1024,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 21,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        24,
+        30
+      ],
+      "contrastFail": 4,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "共 3 篇"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13注意力"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11閱讀"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11工作方法"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 484,
+        "height": 39,
+        "lines": 1,
+        "vwRatio": 0.039,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 171,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 11
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 171x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 768,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/",
+    "width": 390,
+    "fail": [
+      "對比不足 4（例 p.eyebrow:1, span.meta:1）"
+    ],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 390,
+      "hScroll": 0,
+      "pageHeight": 1137,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 18,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        18,
+        24,
+        30
+      ],
+      "contrastFail": 4,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "共 3 篇"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13注意力"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11閱讀"
+        },
+        {
+          "s": "span.meta",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-11工作方法"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 350,
+        "height": 39,
+        "lines": 1,
+        "vwRatio": 0.077,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": null,
+      "images": [],
+      "touch": {
+        "total": 7,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 350x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 390,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.body",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/",
+    "width": "reduced-motion",
+    "infiniteAnimationsRunning": 0
+  },
+  {
+    "path": "/articles/phone-in-another-room/",
+    "width": 1440,
+    "fail": [
+      "對比不足 1（例 p.eyebrow:1）"
+    ],
+    "warn": [],
+    "metrics": {
+      "vw": 1440,
+      "hScroll": 0,
+      "pageHeight": 1302,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 24,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        20,
+        24,
+        44
+      ],
+      "contrastFail": 1,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 44,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 780,
+        "height": 57,
+        "lines": 1,
+        "vwRatio": 0.031,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1440,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.journal",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/phone-in-another-room/",
+    "width": 1280,
+    "fail": [
+      "對比不足 1（例 p.eyebrow:1）"
+    ],
+    "warn": [],
+    "metrics": {
+      "vw": 1280,
+      "hScroll": 0,
+      "pageHeight": 1302,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 24,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        20,
+        24,
+        43.5
+      ],
+      "contrastFail": 1,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 43.5,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 780,
+        "height": 57,
+        "lines": 1,
+        "vwRatio": 0.034,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1280,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/phone-in-another-room/",
+    "width": 768,
+    "fail": [
+      "對比不足 1（例 p.eyebrow:1）"
+    ],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 768,
+      "hScroll": 0,
+      "pageHeight": 1316,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 24,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        17,
+        18,
+        20,
+        24,
+        28
+      ],
+      "contrastFail": 1,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 28,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 484,
+        "height": 36,
+        "lines": 1,
+        "vwRatio": 0.036,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 171,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 11
+      },
+      "images": [],
+      "touch": {
+        "total": 9,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 171x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 768,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/phone-in-another-room/",
+    "width": 390,
+    "fail": [
+      "對比不足 1（例 p.eyebrow:1）"
+    ],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 390,
+      "hScroll": 0,
+      "pageHeight": 1622,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 21,
+      "minFont": 15,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        15,
+        16,
+        18,
+        20,
+        24,
+        28
+      ],
+      "contrastFail": 1,
+      "contrastSamples": [
+        {
+          "s": "p.eyebrow",
+          "cr": 1,
+          "need": 4.5,
+          "fs": 15,
+          "t": "2026-11-13 ・ 注"
+        }
+      ],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 28,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 350,
+        "height": 36,
+        "lines": 1,
+        "vwRatio": 0.072,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 59,
+        "widthPx": 350,
+        "fs": 18,
+        "lh": 1.95,
+        "approxCharsPerLine": 19
+      },
+      "images": [],
+      "touch": {
+        "total": 7,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 350x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 390,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.body",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/articles/phone-in-another-room/",
+    "width": "reduced-motion",
+    "infiniteAnimationsRunning": 0
+  },
+  {
+    "path": "/about/",
+    "width": 1440,
+    "fail": [],
+    "warn": [],
+    "metrics": {
+      "vw": 1440,
+      "hScroll": 0,
+      "pageHeight": 900,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 11,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        17,
+        18,
+        19,
+        24,
+        46
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 46,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 760,
+        "height": 60,
+        "lines": 1,
+        "vwRatio": 0.032,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 722,
+        "fs": 19,
+        "lh": 1.95,
+        "approxCharsPerLine": 38
+      },
+      "images": [],
+      "touch": {
+        "total": 6,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1440,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.journal",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/about/",
+    "width": 1280,
+    "fail": [],
+    "warn": [],
+    "metrics": {
+      "vw": 1280,
+      "hScroll": 0,
+      "pageHeight": 900,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 11,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        17,
+        18,
+        19,
+        24,
+        43.5
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 43.5,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 760,
+        "height": 57,
+        "lines": 1,
+        "vwRatio": 0.034,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 722,
+        "fs": 19,
+        "lh": 1.95,
+        "approxCharsPerLine": 38
+      },
+      "images": [],
+      "touch": {
+        "total": 6,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1280,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/about/",
+    "width": 768,
+    "fail": [],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 768,
+      "hScroll": 0,
+      "pageHeight": 1024,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 11,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        17,
+        18,
+        19,
+        24,
+        30
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 484,
+        "height": 39,
+        "lines": 1,
+        "vwRatio": 0.039,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 484,
+        "fs": 19,
+        "lh": 1.95,
+        "approxCharsPerLine": 25
+      },
+      "images": [],
+      "touch": {
+        "total": 6,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 171x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 768,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/about/",
+    "width": 390,
+    "fail": [],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 390,
+      "hScroll": 0,
+      "pageHeight": 904,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 10,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        18,
+        19,
+        24,
+        30
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 350,
+        "height": 39,
+        "lines": 1,
+        "vwRatio": 0.077,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 350,
+        "fs": 19,
+        "lh": 1.95,
+        "approxCharsPerLine": 18
+      },
+      "images": [],
+      "touch": {
+        "total": 5,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 350x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 390,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.body",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/about/",
+    "width": "reduced-motion",
+    "infiniteAnimationsRunning": 0
+  },
+  {
+    "path": "/search/",
+    "width": 1440,
+    "fail": [],
+    "warn": [],
+    "metrics": {
+      "vw": 1440,
+      "hScroll": 0,
+      "pageHeight": 900,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 12,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        17,
+        18,
+        24,
+        46
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 46,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 684,
+        "height": 60,
+        "lines": 1,
+        "vwRatio": 0.032,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 7,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1440,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.journal",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/search/",
+    "width": 1280,
+    "fail": [],
+    "warn": [],
+    "metrics": {
+      "vw": 1280,
+      "hScroll": 0,
+      "pageHeight": 900,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 12,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        17,
+        18,
+        24,
+        43.5
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 43.5,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 684,
+        "height": 57,
+        "lines": 1,
+        "vwRatio": 0.034,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 215,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 13
+      },
+      "images": [],
+      "touch": {
+        "total": 7,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 215x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 1280,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/search/",
+    "width": 768,
+    "fail": [],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 768,
+      "hScroll": 0,
+      "pageHeight": 1024,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 12,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        17,
+        18,
+        24,
+        30
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 484,
+        "height": 39,
+        "lines": 1,
+        "vwRatio": 0.039,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": {
+        "s": "p",
+        "len": 97,
+        "widthPx": 171,
+        "fs": 16,
+        "lh": 1.85,
+        "approxCharsPerLine": 11
+      },
+      "images": [],
+      "touch": {
+        "total": 7,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 171x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 768,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "aside.rail",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/search/",
+    "width": 390,
+    "fail": [],
+    "warn": [
+      "觸控目標 <44px：2"
+    ],
+    "metrics": {
+      "vw": 390,
+      "hScroll": 0,
+      "pageHeight": 844,
+      "spill": [],
+      "spillCount": 0,
+      "textElCount": 9,
+      "minFont": 16,
+      "smallText": {
+        "lt11": 0,
+        "lt12": 0,
+        "lt14": 0
+      },
+      "smallTextSamples": [],
+      "distinctFontSizes": [
+        16,
+        18,
+        24,
+        30
+      ],
+      "contrastFail": 0,
+      "contrastSamples": [],
+      "contrastSkippedImageBg": 0,
+      "h1": {
+        "fontSize": 30,
+        "lineHeightRatio": 1.3,
+        "letterSpacingEm": -0.01,
+        "width": 350,
+        "height": 39,
+        "lines": 1,
+        "vwRatio": 0.077,
+        "family": "\"Noto Serif TC\""
+      },
+      "body": null,
+      "images": [],
+      "touch": {
+        "total": 5,
+        "lt24": 0,
+        "lt44": 2,
+        "samples": [
+          "a.brand 350x34",
+          "a 66x30"
+        ]
+      },
+      "textOverlap": 0,
+      "textOverlapSamples": [],
+      "sections": [
+        {
+          "s": "div.journal",
+          "left": 0,
+          "width": 390,
+          "bg": "rgb(244, 241, 232)",
+          "py": "0/0"
+        }
+      ],
+      "rightEdgeElement": "div.body",
+      "gaps": []
+    }
+  },
+  {
+    "path": "/search/",
+    "width": "reduced-motion",
+    "infiniteAnimationsRunning": 0
+  }
+]
