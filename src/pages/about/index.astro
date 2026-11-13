@@ -4,4 +4,4 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import Page from '../../components/layouts/expanded/Page.astro';
 const route="about";
 ---
-<SiteLayout title="關於我"><Page route={route}/></SiteLayout>
+<SiteLayout title="關於我" searchable={false}><Page route={route}/></SiteLayout>
