@@ -82,7 +82,9 @@
   },
   "services": [],
   "layoutContent": {
-    "copy": {},
+    "copy": {
+      "greeting": "慢慢讀，不急。"
+    },
     "headings": {
       "h2-01": "最近的文章"
     }
