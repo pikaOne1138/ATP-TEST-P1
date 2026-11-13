@@ -53,7 +53,7 @@ const indexUrl=root+(site.kind==='knowledge'?'articles/':'services/'),detailUrl=
 .journal{--j-dot:color-mix(in srgb,var(--color-content) 16%,transparent);--j-margin:color-mix(in srgb,var(--color-accent) 60%,var(--color-surface))}
 /* 學員 T45 混搭：問候語採候選 hb-collage 的便條樣式（只這一張），其餘採 hb-notebook */
 .journal{--j-tape:color-mix(in srgb,var(--color-accent) 38%,var(--color-surface));--j-note:color-mix(in srgb,var(--color-accent) 16%,var(--color-surface))}
-.hello{display:inline-block;position:relative;margin-left:76px;margin-top:56px;background:var(--j-note);padding:18px 28px 14px;box-shadow:var(--shadow-sm);transform:rotate(-2deg)}
+.hello{display:inline-block;position:relative;margin-left:76px;margin-top:56px;margin-bottom:28px;background:var(--j-note);padding:18px 28px 14px;box-shadow:var(--shadow-sm);transform:rotate(-2deg)}
 .hello::before{content:"";position:absolute;top:-12px;left:32px;width:84px;height:24px;background:var(--j-tape);opacity:.85;transform:rotate(-3deg)}
 .desk,.archive{position:relative;padding-left:76px;background-image:radial-gradient(var(--j-dot) 1px,transparent 1.5px);background-size:22px 22px}
 .desk::before,.archive::before{content:"";position:absolute;left:54px;top:0;bottom:0;border-left:2px solid var(--j-margin)}
@@ -65,7 +65,7 @@ const indexUrl=root+(site.kind==='knowledge'?'articles/':'services/'),detailUrl=
 .entry .no,.entry:first-child .no,.archive .no{position:absolute;left:-76px;width:42px;text-align:right;margin:0;font-family:var(--j-hand);font-size:26px;line-height:1}
 .entry .no{top:20px}.entry:first-child .no{top:-4px}.archive .no{top:30px}
 /* 學員 T45：手機左邊留白縮小，減少標題斷行 */
-@media(max-width:700px){.hello{margin-left:0;margin-top:36px;padding:14px 20px 10px}.desk,.archive{padding-left:34px}.pagehead{padding-left:34px}.desk::before,.archive::before{left:24px}.entry .no,.entry:first-child .no,.archive .no{left:-34px;width:20px;font-size:17px}.archive .no{top:36px}}
+@media(max-width:700px){.hello{margin-left:0;margin-top:36px;margin-bottom:22px;padding:14px 20px 10px}.desk,.archive{padding-left:34px}.pagehead{padding-left:34px}.desk::before,.archive::before{left:24px}.entry .no,.entry:first-child .no,.archive .no{left:-34px;width:20px;font-size:17px}.archive .no{top:36px}}
 </style>
 <style>.native-extra{padding:32px 0 48px;font-size:18px}.native-extra :global(h1){font:400 clamp(30px,3.4vw,46px)/1.3 var(--font-heading);letter-spacing:-.01em;margin:24px 0}.native-extra :global(.interior){padding:0;margin:0;width:auto;max-width:38em} .native-extra h1{overflow-wrap:anywhere} :global(.student-navigation){min-width:0} h1{overflow-wrap:anywhere;text-wrap:balance} .prose :global(pre),.prose :global(table){max-width:100%;overflow:auto} .prose :global(table){display:block}</style>
 
